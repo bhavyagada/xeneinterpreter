@@ -5,7 +5,7 @@ go 1.24
 toolchain go1.24.1
 
 require (
-	github.com/bhavyagada/xeneinterpreter v0.0.0-20160816134737-6d5b4161d678 // indirect
+	github.com/bhavyagada/xeneinterpreter v1.0.0 // indirect
 	github.com/goccmack/gocc v1.0.2 // indirect
 	github.com/mattn/go-runewidth v0.0.9 // indirect
 	github.com/nsf/termbox-go v1.1.1 // indirect
