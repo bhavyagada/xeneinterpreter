@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./runtime"
+	"github.com/bhavyagada/xeneinterpreter/runtime"
 	"testing"
 )
 
