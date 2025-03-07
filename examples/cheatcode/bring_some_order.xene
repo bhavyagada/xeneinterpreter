@@ -1,0 +1,12 @@
+foreach var_a in input {
+	var_b = 0;
+	while var_b < input.length - 1 {
+		if input[var_b] > input[var_b + 1] {
+			var_c = input[var_b];
+			input[var_b] = input[var_b + 1];
+			input[var_b + 1] = var_c;
+		}
+		var_b++;
+	}
+}
+return input;

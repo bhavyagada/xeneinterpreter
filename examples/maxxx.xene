@@ -1,0 +1,5 @@
+var_a = input[0];
+foreach var_b in  input {
+    var_a = max(var_a, var_b);
+}
+return var_a;

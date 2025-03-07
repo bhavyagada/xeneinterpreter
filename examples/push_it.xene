@@ -1,0 +1,7 @@
+var_a = 0;
+var_b = [];
+while var_a < input {
+    var_b.push(var_a);
+    var_a++;
+}
+return var_b;

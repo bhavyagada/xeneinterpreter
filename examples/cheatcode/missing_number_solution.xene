@@ -1,0 +1,19 @@
+var_a = input[0];
+foreach var_b in input {
+	var_a = max(var_a, var_b);
+}
+var_o = [];
+var_b = 0;
+while var_b < var_a {
+	var_c = 0;
+	foreach var_d in input {
+		if var_d == var_b {
+			var_c = 1;
+		}
+	}
+	if var_c != 1 {
+		var_o.push(var_b);
+	}
+	var_b++;
+}
+return var_o;

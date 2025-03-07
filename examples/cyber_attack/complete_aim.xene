@@ -1,0 +1,9 @@
+var_a = 0;
+var_o = [];
+while var_a < input[0] {
+	var_o.push(var_a);
+	var_a++;
+}
+foreach var_a in input {
+	var_o.push(var_a);
+}

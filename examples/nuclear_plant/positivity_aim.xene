@@ -1,0 +1,4 @@
+var_o = [];
+foreach var_a in input {
+	var_o.push(var_a > 0 || var_a == 0);
+}

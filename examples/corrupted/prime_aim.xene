@@ -1,0 +1,11 @@
+if input == 1 {
+	return false;
+}
+var_b = 2;
+while var_b < input {
+	if mod(input, var_b) == 0 {
+		return false;
+	}
+	var_b++;
+}
+return true;

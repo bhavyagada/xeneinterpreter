@@ -1,0 +1,6 @@
+var_a = 0;
+while var_a < input.length {
+	input[var_a]++;
+	var_a++;
+}
+return input;

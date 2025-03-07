@@ -1,0 +1,24 @@
+var_a = [];
+foreach var_c in input {
+	if var_c == "(" || var_c == "[" {
+		var_a.push(var_c);
+	}
+	else {
+		if var_a.length == 0 {
+			return false;
+		}
+		if var_c == ")" {
+			if var_a[var_a.length - 1] != "(" {
+				return false;
+			}
+			var_a.pop;
+		}
+		else {
+			if var_a[var_a.length - 1] != "[" {
+				return false;
+			}
+			var_a.pop;
+		}
+	}
+}
+return var_a.length == 0;

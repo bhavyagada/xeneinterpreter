@@ -1,0 +1,13 @@
+var_o = 0;
+foreach var_a in input {
+	if var_a == "(" {
+		var_o++;
+	}
+	if var_a == ")" {
+		var_o--;
+	}
+	if var_o < 0 {
+		return false;
+	}
+}
+return var_o == 0;

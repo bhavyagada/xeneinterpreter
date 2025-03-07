@@ -1,0 +1,8 @@
+var_a = input[0];
+foreach var_b in input {
+	if var_b < var_a {
+		return false;
+	}
+	var_a = var_b;
+}
+return true;

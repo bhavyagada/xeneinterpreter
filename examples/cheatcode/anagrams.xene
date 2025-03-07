@@ -1,0 +1,24 @@
+var_a = 0;
+while var_a < input.length {
+	var_b = 0;
+	while var_b < input[var_a].length {
+		var_c = 0;
+		while var_c < input[var_a].length - 1 {
+			if input[var_a][var_c] > input[var_a][var_c + 1] {
+				var_d = input[var_a][var_c];
+				input[var_a][var_c] = input[var_a][var_c + 1];
+				input[var_a][var_c + 1] = var_d;
+			}
+			var_c++;
+		}
+		var_b++;
+	}
+	var_a++;
+}
+var_a = input[0];
+foreach var_b in input {
+	if var_a != var_b {
+		return false;
+	}
+}
+return true;

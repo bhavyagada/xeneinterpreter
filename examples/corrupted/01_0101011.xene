@@ -1,0 +1,9 @@
+var_o = 0;
+var_a = input.length - 1;
+foreach var_b in input {
+	if var_b == 1 {
+		var_o = var_o + pow(2, var_a);
+	}
+	var_a--;
+}
+return var_o;

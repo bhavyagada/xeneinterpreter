@@ -1,0 +1,7 @@
+var_a = 0;
+var_b = input;
+while input > 0 {
+    var_a = var_a + var_b;
+    input--;
+}
+return var_a;

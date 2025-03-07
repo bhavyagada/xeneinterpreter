@@ -1,0 +1,9 @@
+var_a = input.length / 2;
+var_b = 0;
+while var_b < var_a {
+    if input[var_b] != input[input.length - var_b - 1] {
+        return false;
+    }
+    var_b++;
+}
+return true;

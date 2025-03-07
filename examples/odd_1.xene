@@ -1,0 +1,6 @@
+var_a = input / 2;
+if var_a * 2 == input {
+    false;
+} else {
+    true;
+}

@@ -1,0 +1,10 @@
+var_a = "";
+var_b = input[0];
+var_c = input[1];
+while var_d < var_c.length {
+	if var_c[var_d] != var_b {
+		var_a = var_a + var_c[var_d];
+}
+	var_d++;
+}
+return var_a;

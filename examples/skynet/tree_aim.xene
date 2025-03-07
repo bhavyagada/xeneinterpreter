@@ -1,0 +1,13 @@
+function f1: var_a, var_o {
+	foreach var_b in var_a {
+		if var_b.is_list {
+			f1(var_b, var_o);
+		}
+		else {
+			var_o.push(var_b);
+		}
+	}
+}
+var_o = [];
+f1(input, var_o);
+return var_o;
