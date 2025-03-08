@@ -8,6 +8,7 @@ import (
   "os"
   "time"
   "github.com/bhavyagada/xeneinterpreter/runtime"
+  "github.com/bhavyagada/xeneinterpreter/token"
 )
 
 type TestCase struct {
@@ -82,11 +83,16 @@ func main() {
 
 func getTokens(code runtime.Callable) []string {
   tokensChan := iterateExecutableTokens(code)
-  var tokens []string
+  var tokens []*token.Token
   for t := range tokensChan {
-    tokens = append(tokens, string(t.Lit))
+    tokens = append(tokens, t)
   }
-  return tokens
+
+  tokenStrings := make([]string, len(tokens))
+  for i, t := range tokens {
+    tokenStrings[i] = string(t.Lit)
+  }
+  return tokenStrings
 }
 
 func runTests(code runtime.Callable, cases []TestCase) []TestCaseResult {
