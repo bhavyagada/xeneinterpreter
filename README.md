@@ -1,6 +1,6 @@
 # XeneInterpreter
 
-XeneInterpreter is a featurecomplete interpreter for the H language which is used in http://xeneapp.com. This interpreter has supports C-style comments in code files, which the original language doesn't at the moment.
+XeneInterpreter is a featurecomplete interpreter for the H language which is used in https://xene.onrender.com. This interpreter has supports C-style comments in code files, which the original language doesn't at the moment.
 
 ## Compiling
 1. install [golang](http://golang.org/)
